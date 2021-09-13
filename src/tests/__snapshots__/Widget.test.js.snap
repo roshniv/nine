@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Widget component renders error message if cannot get position 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <p>
+        Please try later
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Widget component renders error message if cannot get weather information 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <p>
+        Please try later
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Widget component should render weather information if user allow to get location in browser 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <img
+        alt="weather"
+        aria-label="weather-icon"
+        class="widget__weather-img"
+        src="day.svg"
+      />
+      <div
+        class="widget__weather-info"
+        data-testid="widget-info"
+      >
+        <div
+          class="widget__city"
+        >
+          Sydney
+        </div>
+        <div
+          class="widget__temperature"
+        >
+          12°
+        </div>
+        <div
+          class="widget__wind"
+          data-testid="widget-wind"
+        >
+          <span
+            class="widget__wind-status"
+          >
+            Wind
+          </span>
+          <span
+            class="widget__wind-info"
+          >
+            NW 1km/h
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Widget component show loading when component start loading 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <div
+        class="widget__loading"
+        data-testid="loading"
+      >
+        <span
+          class="css-18jvrwa"
+        >
+          <span
+            class="css-19yb4yo"
+          />
+          <span
+            class="css-1ad1jmu"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Widget component shows a rainy icon if it is a rainy day! 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <img
+        alt="weather"
+        aria-label="weather-icon"
+        class="widget__weather-img"
+        src="rainy.svg"
+      />
+      <div
+        class="widget__weather-info"
+        data-testid="widget-info"
+      >
+        <div
+          class="widget__city"
+        >
+          Sydney
+        </div>
+        <div
+          class="widget__temperature"
+        >
+          12°
+        </div>
+        <div
+          class="widget__wind"
+          data-testid="widget-wind"
+        >
+          <span
+            class="widget__wind-status"
+          >
+            Wind
+          </span>
+          <span
+            class="widget__wind-info"
+          >
+            NW 1km/h
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Widget component shows a snowy icon if it is a snowy day! 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <img
+        alt="weather"
+        aria-label="weather-icon"
+        class="widget__weather-img"
+        src="snowy.svg"
+      />
+      <div
+        class="widget__weather-info"
+        data-testid="widget-info"
+      >
+        <div
+          class="widget__city"
+        >
+          Sydney
+        </div>
+        <div
+          class="widget__temperature"
+        >
+          12°
+        </div>
+        <div
+          class="widget__wind"
+          data-testid="widget-wind"
+        >
+          <span
+            class="widget__wind-status"
+          >
+            Wind
+          </span>
+          <span
+            class="widget__wind-info"
+          >
+            NW 1km/h
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Widget component shows a sunny icon if it is a good day! 1`] = `
+<DocumentFragment>
+  <div
+    class="widget"
+  >
+    <div
+      class="widget__title"
+      data-testid="widget-title"
+    >
+      TITLE
+    </div>
+    <div
+      class="widget__content"
+    >
+      <img
+        alt="weather"
+        aria-label="weather-icon"
+        class="widget__weather-img"
+        src="day.svg"
+      />
+      <div
+        class="widget__weather-info"
+        data-testid="widget-info"
+      >
+        <div
+          class="widget__city"
+        >
+          Sydney
+        </div>
+        <div
+          class="widget__temperature"
+        >
+          12°
+        </div>
+        <div
+          class="widget__wind"
+          data-testid="widget-wind"
+        >
+          <span
+            class="widget__wind-status"
+          >
+            Wind
+          </span>
+          <span
+            class="widget__wind-info"
+          >
+            NW 1km/h
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

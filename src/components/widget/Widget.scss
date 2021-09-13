@@ -1,0 +1,43 @@
+.widget {
+  //mobile
+  padding: 33px 30px 30px 33px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+
+  &__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  &__content {
+    display: flex;
+    margin-top: 36px;
+  }
+  &__loading{
+    display: flex;
+  }
+  &__weather-img {
+    width: 40%;
+    padding-right: 10px;
+    object-fit: cover;
+  }
+  &__weather-info {
+    padding-left: 10px;
+  }
+  &__temperature {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  &__wind {
+    min-height: 20px;
+  }
+  &__wind-status {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 6px;
+  }
+  &__wind-info {
+    font-size: 12px;
+  }
+}

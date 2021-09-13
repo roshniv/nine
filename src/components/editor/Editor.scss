@@ -1,0 +1,129 @@
+.editor {
+    position: relative;
+    padding: 0 16px;
+    background-color: #f5f5f5;
+    width: 760px;
+    border-radius: 0 0 8px 8px;
+    min-height: 337px;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #1976d2;
+        top: -12px;
+        left: 0;
+    }
+
+    &__container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__edit-panel {
+        width: 100%;
+        margin-top: 32px;
+    }
+    &__display-panel {
+        width: 100%;
+    }
+    &__verticle-divider {
+        display: none;
+    }
+    &__control-field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        &:last-child {
+            padding-top: 8px;
+            margin-bottom: 0;
+        }
+    }
+    &__control-label {
+        margin-bottom: 15px;
+    }
+    &__text-input {
+        display: block;
+        padding-left: 16px;
+        font-size: 14px;
+        height: 32px;
+        border-radius: 4px;
+        border: 1px solid #d3d3d3;
+        transition: box-shadow 0.3s;
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 5px 2px #d3d3d3;
+        }
+    }
+    &__radio-group {
+        display: flex;
+    }
+
+    &__radio-btn {
+        position: relative;
+        cursor: pointer;
+        width: 50%;
+        padding-left: 32px;
+    }
+    &__radio-input {
+        display: none;
+        &:checked {
+            ~ .editor__radio-icon {
+                background-color: #1976d2;
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__radio-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #d3d3d3;
+        border-radius: 50%;
+        background-color: white;
+        &:after {
+            position: absolute;
+			top: 0px;
+			right: 0;
+			bottom: 0;
+			left: 0px;
+			display: none;
+			width: 6px;
+			height: 6px;
+			margin: auto;
+			background: white;
+			border-radius: 50%;
+			content: '';
+        }
+    }
+
+    // desktop
+    @media (min-width: 768px) {
+        &__container {
+            padding: 62px;
+            flex-direction: row;
+        }
+        &__edit-panel {
+            width: 50%;
+            padding-right: 32px;
+            margin-top: 0;
+        }
+        &__display-panel {
+            width: 50%;
+            padding-left: 32px;
+        }
+        &__verticle-divider {
+            display: block;
+            margin: 16px 0;
+            width: 1px;
+            background-color: #d3d3d3;
+        }
+    }
+}
